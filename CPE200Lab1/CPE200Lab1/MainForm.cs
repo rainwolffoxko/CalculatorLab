@@ -113,7 +113,7 @@ namespace CPE200Lab1
                 return;
             }
             if (firstOperand != null)
-            {
+            {   //incomplete here!!!
                 string secondOperand = lblDisplay.Text;
                 string result = calculate(operate, firstOperand, secondOperand);
                 if (result is "E" || result.Length > 8)
