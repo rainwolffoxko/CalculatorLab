@@ -112,13 +112,27 @@ namespace CPE200Lab1
             {
                 return;
             }
-            operate = ((Button)sender).Text;
-            switch (operate)
+            if (firstOperand != null)
             {
+                string secondOperand = lblDisplay.Text;
+                string result = calculate(operate, firstOperand, secondOperand);
+                if (result is "E" || result.Length > 8)
+                {
+                    lblDisplay.Text = "Error";
+                }
+                else
+                {
+                    lblDisplay.Text = result;
+                }
+            }
+            operate = ((Button)sender).Text;
+
+            switch (operate) { 
                 case "+":
                 case "-":
                 case "X":
                 case "÷":
+
                     firstOperand = lblDisplay.Text;
                     isAfterOperater = true;
                     break;
@@ -127,6 +141,7 @@ namespace CPE200Lab1
                     break;
             }
             isAllowBack = false;
+
         }
 
         private void btnEqual_Click(object sender, EventArgs e)
