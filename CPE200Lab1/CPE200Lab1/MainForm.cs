@@ -95,11 +95,16 @@ namespace CPE200Lab1
                 case "-":
                 case "X":
                 case "÷":
-
                     firstOperand = lblDisplay.Text;
                     isAfterOperater = true;
                     break;
                 case "%":
+                    // your code here
+                    break;
+                case "√":
+                    // your code here
+                    break;
+                case "1/x":
                     // your code here
                     break;
             }
@@ -204,6 +209,11 @@ namespace CPE200Lab1
                     lblDisplay.Text = "0";
                 }
             }
+        }
+
+        private void btnSqroot_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
