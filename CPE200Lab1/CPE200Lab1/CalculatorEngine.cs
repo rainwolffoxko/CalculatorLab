@@ -49,6 +49,21 @@ namespace CPE200Lab1
                 case "1/x":
                     //your code here
                     break;
+                case "MC":
+                    //
+                    break;
+                case "MR":
+                    //
+                    break;
+                case "MS":
+                    //
+                    break;
+                case "M+":
+                    //
+                    break;
+                case "M-":
+                    //
+                    break;
             }
             return "E";
         }
